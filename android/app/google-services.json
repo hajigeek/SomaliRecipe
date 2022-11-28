@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "217077065193",
+    "firebase_url": "https://yurecipe-cef29-default-rtdb.firebaseio.com",
+    "project_id": "yurecipe-cef29",
+    "storage_bucket": "yurecipe-cef29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217077065193:android:bc01eba37289dfa93d5778",
+        "android_client_info": {
+          "package_name": "com.iweydii.recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217077065193-addpl1a6trm2oir07ok83tcjh8p6ef3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_kavioDXlyzL6rPUVPQ1gVxhjwFlfhLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217077065193-addpl1a6trm2oir07ok83tcjh8p6ef3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

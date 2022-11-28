@@ -1,0 +1,176 @@
+name: Somali_Yurecipe
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  firebase_database: ^3.0.4
+  firebase_storage:
+  firebase_auth: ^0.11.1+10
+  cloud_firestore: ^0.12.7
+  firebase_core:
+  shimmer: ^0.0.6
+  rxdart: ^0.21.0
+  connectivity: ^2.0.2
+  giffy_dialog:
+  image_picker:
+  uuid: ^2.2.2
+  shared_preferences: ^0.5.12+4
+  eva_icons_flutter: ^2.0.0
+  carousel_slider: ^4.0.0-nullsafety.0
+  flutter_rating_bar: ^3.0.1+1
+  youtube_player_flutter: ^7.0.0+6
+  flutter_webview_plugin: ^0.3.11
+  flutter_inappwebview: ^3.4.0+2
+  platform: ^3.1.0
+  google_nav_bar: ^5.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.8.1
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/ImageApps.png"
+
+
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  fonts:
+    - family : Lemon
+      fonts:
+        - asset: assets/font/Lemon-Regular.ttf
+          weight: 400
+    - family : Sofia
+      fonts:
+        - asset: assets/font/Sofia/SofiaProBold.otf
+          weight: 900
+        - asset: assets/font/Sofia/SofiaProSemiBold.otf
+          weight: 800
+        - asset: assets/font/Sofia/SofiaProMedium.otf
+          weight: 700
+        - asset: assets/font/Sofia/SofiaProRegular.otf
+          weight: 600
+        - asset: assets/font/Sofia/SofiaProLight.otf
+          weight: 500
+        - asset: assets/font/Sofia/SofiaProExtraLight.otf
+          weight: 400
+        - asset: assets/font/Sofia/SofiaProUltraLight.otf
+          weight: 300
+    - family : Poppins
+      fonts:
+        - asset: assets/font/Poppins/Poppins-ExtraBold.otf
+          weight: 900
+        - asset: assets/font/Poppins/Poppins-Bold.otf
+          weight: 800
+        - asset: assets/font/Poppins/Poppins-SemiBold.otf
+          weight: 700
+        - asset: assets/font/Poppins/Poppins-Medium.otf
+          weight: 600
+        - asset: assets/font/Poppins/Poppins-Regular.otf
+          weight: 500
+        - asset: assets/font/Poppins/Poppins-Light.otf
+          weight: 400
+        - asset: assets/font/Poppins/Poppins-ExtraLight.otf
+          weight: 300
+        - asset: assets/font/Poppins/Poppins-Thin.otf
+          weight: 200
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/image/Logo.png
+    - assets/image/empty.jpeg
+    - assets/image/backgroundSplash.png
+    - assets/image/profileBackground.png
+    - assets/image/breakfastSearch.png
+    - assets/image/cafeSearch.png
+    - assets/image/dinnerSearch.png
+    - assets/image/healtyfoodSearch.png
+    - assets/image/lunchSearch.png
+    - assets/image/breakfast.png
+    - assets/image/cafe.png
+    - assets/image/dinner.png
+    - assets/image/healtyfood.png
+    - assets/image/lunch.png
+    - assets/image/search.png
+    - assets/image/callCenter.png
+    - assets/image/editProfile.png
+    - assets/image/phone.png
+    - assets/image/editProfile.png
+    - assets/image/logout.png
+    - assets/image/splashBackground.png
+    - assets/image/backgroundProfile.png
+    - assets/image/background1.png
+    - assets/image/background2.png
+    - assets/image/background3.png
+    - assets/image/background4.png
+    - assets/image/background5.png
+    - assets/image/background6.png
+    - assets/image/background7.png
+    - assets/image/background8.png
+    - assets/image/background9.png
+    - assets/image/background10.png
+    - assets/image/background11.png
+    - assets/image/background12.png
+    - assets/image/yourRecipes.png
+    - assets/image/mealPlan.png
+    - assets/image/addRecipe.png
+    - assets/image/opening.gif
+    - assets/ilustration/1.png
+    - assets/ilustration/2.png
+    - assets/ilustration/3.png
+    - assets/ilustration/4.png
+    - assets/ilustration/5.png
+    - assets/image/noInternet.png
+    - assets/image/banner1.webp
+    - assets/image/banner2.webp
+    - assets/image/banner3.webp
+    - assets/image/ImageApps.png
