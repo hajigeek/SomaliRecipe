@@ -1,0 +1,43 @@
+@startuml
+class User {
+  +login()
+  +signUp()
+  +createRecipe()
+}
+
+class Recipe {
+  +pic
+  +ingredients
+  +instructions
+  +recipeName
+  +saveRecipeToDatabase()
+  +category
+}
+
+class Category {
+  +categoryName
+}
+
+class Meal_plan {
+  +selectRecipe()
+  +setWeekDay()
+  +saveRecipeToMealPlan()
+}
+
+class Favorite_recipes {
+  +recipeList
+  +addRecipeToFavorites()
+}
+
+class RecipeVideo {
+  +getDataFromAPI()
+}
+
+User -down-> Recipe
+Recipe -down-> Category
+User -down-> Meal_plan
+User -down-> Favorite_recipes
+Meal_plan -down-> Recipe
+
+@enduml
+

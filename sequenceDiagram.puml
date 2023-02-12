@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+ProfileUser -> Home_screen : access home screen
+Home_screen -> Recipe : fetch recipes
+Recipe --> Home_screen : return list of recipes
+ProfileUser -> Recipe: createRecipe()
+ProfileUser -> Recipe: set recipe name, category, picture, ingredients, instructions
+Recipe -> Category: getCategory()
+Recipe -> Recipe: saveRecipe()
+Recipe --> ProfileUser: return success message
+
+ProfileUser-> Recipe: viewRecipe()
+ProfileUser -> Meal_plan: addRecipeToFavorites()
+ProfileUser -> Meal_plan: selectRecipe()
+ProfileUser -> Meal_plan: set Weekday, select recipe
+Meal_plan --> Recipe: getRecipe()
+Meal_plan -> Meal_plan: saveRecipeToDatabase()
+Meal_plan --> ProfileUser: return success message
+@enduml

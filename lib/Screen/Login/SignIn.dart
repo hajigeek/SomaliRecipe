@@ -321,12 +321,11 @@ class _SignInState extends State<SignIn> {
                                   height: 52.0,
                                   width: double.infinity,
                                   decoration: BoxDecoration(
+
                                     borderRadius: BorderRadius.circular(80.0),
-                                    gradient: LinearGradient(colors: [
-                                      Color(0xFFFEE140),
-                                      Color(0xFFFF942F),
-                                    ]),
+                                    color: Color(0xFF130f40),
                                   ),
+
                                   child: Center(
                                       child: Text(
                                     "Signin",
@@ -366,7 +365,7 @@ class _SignInState extends State<SignIn> {
                                   Text(" Signup",
                                       style: TextStyle(
                                           fontFamily: "Sofia",
-                                          color: Color(0xFFFF942F),
+                                          color: Color(0xFF130f40),
                                           fontWeight: FontWeight.w300,
                                           fontSize: 15.0))
                                 ],
