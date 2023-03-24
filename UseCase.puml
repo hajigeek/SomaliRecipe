@@ -1,0 +1,18 @@
+@startuml
+title Use Case Diagram for YURECIPE
+left to right direction
+
+
+
+(Login) <|-- User
+(Sign up) <|-- User
+(Create Recipe) <|-- User
+(View Recipe) <|-- User
+(delete) <|-- (View Recipe)
+(Add Recipe to Favorites) <|-- User
+(Remove) <|-- (Add Recipe to Favorites)
+(Select Recipe for Meal Plan) <|-- User
+(Remove) <|-- (Select Recipe for Meal Plan)
+(Save Recipe to Meal Plan) <|-- User
+(Remove) <|-- (Save Recipe to Meal Plan)
+@enduml

@@ -54,6 +54,8 @@ dependencies:
   flutter_inappwebview: ^3.4.0+2
   platform: ^3.1.0
   google_nav_bar: ^5.0.6
+  nb_utils: ^3.3.0+13
+  dcdg: ^2.0.1
 
 dev_dependencies:
   flutter_test:

@@ -118,7 +118,7 @@ class _chooseLoginState extends State<chooseLogin>
                                   child: Padding(
                                     padding: const EdgeInsets.only(left: 20.0),
                                     child: Text(
-                                      "DELIVERED\nFAST FOOD\nTO YOUR\nRECIPES.",
+                                      "Discover\nDelicious \nSomali\nCuisine.",
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 37.0,
@@ -167,8 +167,8 @@ class _chooseLoginState extends State<chooseLogin>
                                         },
                                         child: ButtonCustom(
                                           txt: "Login",
-                                          gradient1: Color(0xFFFEE140),
-                                          gradient2: Color(0xFFFA709A),
+                                          gradient1: Color(0xFF130f40),
+                                          gradient2: Color(0xFF130f40),
                                           border: Colors.transparent,
                                         ),
                                       ),
@@ -196,8 +196,8 @@ class _chooseLoginState extends State<chooseLogin>
                                     },
                                     child: ButtonCustom(
                                       txt: "Register Your Account",
-                                      gradient1: Colors.blue,
-                                      gradient2: Colors.blueAccent,
+                                      gradient1:Color(0xFF130f40),
+                                      gradient2: Color(0xFF130f40),
                                       border: Colors.transparent,
                                     ),
                                   ),

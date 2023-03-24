@@ -76,7 +76,7 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                             ),
                             Padding(
                               padding:
-                              const EdgeInsets.only(top: 20.0, left: 15.0),
+                                  const EdgeInsets.only(top: 20.0, left: 15.0),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -153,8 +153,8 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                         color: Colors.red,
                                         image: DecorationImage(
                                             image: NetworkImage(userDocument[
-                                            "photoProfile"] !=
-                                                null
+                                                        "photoProfile"] !=
+                                                    null
                                                 ? userDocument["photoProfile"]
                                                 : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"),
                                             fit: BoxFit.cover),
@@ -169,9 +169,9 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                       left: 25.0, top: 20.0),
                                   child: Column(
                                       mainAxisAlignment:
-                                      MainAxisAlignment.start,
+                                          MainAxisAlignment.start,
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text(
                                           userDocument["name"] != null
@@ -213,8 +213,8 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                             onTap: () {
                               Navigator.of(context).push(PageRouteBuilder(
                                   pageBuilder: (_, __, ___) => new MealPlan(
-                                    idUser: widget.idUser,
-                                  )));
+                                        idUser: widget.idUser,
+                                      )));
                             },
                             child: category(
                               txt: "Meal Plan",
@@ -226,8 +226,8 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                             onTap: () {
                               Navigator.of(context).push(PageRouteBuilder(
                                   pageBuilder: (_, __, ___) => new AddRecipe(
-                                    userId: widget.idUser,
-                                  )));
+                                        userId: widget.idUser,
+                                      )));
                             },
                             child: category(
                               txt: "Add Recipes",
@@ -239,8 +239,8 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                             onTap: () {
                               Navigator.of(context).push(PageRouteBuilder(
                                   pageBuilder: (_, __, ___) => new YourRecipes(
-                                    uid: widget.idUser,
-                                  )));
+                                        uid: widget.idUser,
+                                      )));
                             },
                             child: category(
                               txt: "Your Recipes",
@@ -252,17 +252,17 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                             onTap: () {
                               Navigator.of(context).push(PageRouteBuilder(
                                   pageBuilder: (_, ___, ____) =>
-                                  new updateProfile(
-                                    country: userDocument["country"],
-                                    city: userDocument["city"],
-                                    name: userDocument["name"],
-                                    photoProfile: userDocument[
-                                    "photoProfile"] !=
-                                        null
-                                        ? userDocument["photoProfile"]
-                                        : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
-                                    uid: widget.idUser,
-                                  )));
+                                      new updateProfile(
+                                        country: userDocument["country"],
+                                        city: userDocument["city"],
+                                        name: userDocument["name"],
+                                        photoProfile: userDocument[
+                                                    "photoProfile"] !=
+                                                null
+                                            ? userDocument["photoProfile"]
+                                            : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
+                                        uid: widget.idUser,
+                                      )));
                             },
                             child: category(
                               txt: "Edit Profile",
@@ -270,8 +270,30 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                               padding: 20.0,
                             ),
                           ),
-
-
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).push(PageRouteBuilder(
+                                  pageBuilder: (_, __, ___) =>
+                                      new callCenter()));
+                            },
+                            child: category(
+                              txt: "Call Center",
+                              image: "assets/image/callCenter.png",
+                              padding: 20.0,
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).push(PageRouteBuilder(
+                                  pageBuilder: (_, __, ___) =>
+                                      new aboutApps()));
+                            },
+                            child: category(
+                              txt: "About Apps",
+                              image: "assets/image/phone.png",
+                              padding: 20.0,
+                            ),
+                          ),
                           InkWell(
                             onTap: () {
                               _delete();
@@ -279,7 +301,7 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                   Navigator.of(context).pushReplacement(
                                       PageRouteBuilder(
                                           pageBuilder: (_, ___, ____) =>
-                                          new chooseLogin())));
+                                              new chooseLogin())));
                             },
                             child: category(
                               txt: "Logout",

@@ -334,7 +334,6 @@ class _HomeScreenT1State extends State<HomeScreenT1> {
                     child: Column(
                       children: <Widget>[
                         _search,
-                        _sliderImage,
                         Padding(
                           padding: const EdgeInsets.only(
                               left: 20.0, right: 20.0, top: 30.0),
