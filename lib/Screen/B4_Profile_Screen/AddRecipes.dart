@@ -45,8 +45,8 @@ class _AddRecipeState extends State<AddRecipe> {
     PicUrl = dowurl.toString();
     setState(() {
       print(" Picture uploaded");
-      Scaffold.of(context)
-          .showSnackBar(SnackBar(content: Text(' Picture Uploaded')));
+     ScaffoldMessenger.of(context)
+                                                .showSnackBar(SnackBar(content: Text(' Picture Uploaded')));
     });
   }
 
@@ -151,7 +151,7 @@ class _AddRecipeState extends State<AddRecipe> {
 
   String _valOccassion;
   String _valAvailable;
-  List _listOccassion = ["Lunch", "Dinner", "Breakfast", "Cafe", "HealtyFood"];
+  List _listOccassion = ["Lunch", "Dinner", "Breakfast"];
 
   final List<String> _dataIngredients = List.empty(growable: true);
   final TextEditingController _ingredients = TextEditingController();
@@ -851,7 +851,7 @@ class _AddRecipeState extends State<AddRecipe> {
                                         content:
                                             Text("Please input your recipe"),
                                         actions: <Widget>[
-                                          FlatButton(
+                                          ElevatedButton(
                                             child: Text("Close"),
                                             onPressed: () {
                                               Navigator.of(context).pop();

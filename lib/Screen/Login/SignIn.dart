@@ -284,7 +284,7 @@ class _SignInState extends State<SignIn> {
                                                 content: Text(
                                                     "Please check your password and try again!"),
                                                 actions: <Widget>[
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                     child: Text("Close"),
                                                     onPressed: () {
                                                       Navigator.of(context)
@@ -305,7 +305,7 @@ class _SignInState extends State<SignIn> {
                                             content: Text(
                                                 "Please check your email and password"),
                                             actions: <Widget>[
-                                              FlatButton(
+                                              ElevatedButton(
                                                 child: Text("Close"),
                                                 onPressed: () {
                                                   Navigator.of(context).pop();

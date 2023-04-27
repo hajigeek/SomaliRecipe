@@ -52,10 +52,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
               return HomeScreenT1(
                 userID: widget.idUser,
               );
-            case NavBarItem.VIDEO:
-              return B2Playlist(
-                idUser: widget.idUser,
-              );
+            // case NavBarItem.VIDEO:
+            //   return B2Playlist(
+            //     idUser: widget.idUser,
+            //   );
             case NavBarItem.DISCOVER:
               return discover(
                 userId: widget.idUser,

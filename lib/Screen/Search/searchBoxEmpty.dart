@@ -78,11 +78,11 @@ class _searchBoxEmptyState extends State<searchBoxEmpty>
                           );
                         }));
                   },
-                  child: cardCountry(
-                      colorTop: Color(0xFF63CCD1),
-                      colorBottom: Color(0xFF75E3AC),
-                      image: "assets/image/cafeSearch.png",
-                      title: "Coffe"),
+                  // child: cardCountry(
+                  //     colorTop: Color(0xFF63CCD1),
+                  //     colorBottom: Color(0xFF75E3AC),
+                  //     image: "assets/image/cafeSearch.png",
+                  //     title: "Coffe"),
                 ),
                 InkWell(
                   onTap: () {
@@ -122,11 +122,11 @@ class _searchBoxEmptyState extends State<searchBoxEmpty>
                           );
                         }));
                   },
-                  child: cardCountry(
-                      colorTop: Color(0xFF56B4EE),
-                      colorBottom: Color(0xFF59CCE1),
-                      image: "assets/image/healtyfoodSearch.png",
-                      title: "Healty"),
+                  // child: cardCountry(
+                  //     colorTop: Color(0xFF56B4EE),
+                  //     colorBottom: Color(0xFF59CCE1),
+                  //     image: "assets/image/healtyfoodSearch.png",
+                  //     title: "Healty"),
                 ),
                 InkWell(
                   onTap: () {

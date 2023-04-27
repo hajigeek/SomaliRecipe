@@ -130,7 +130,7 @@ class _HomeScreenT1State extends State<HomeScreenT1> {
                     ],
                   ),
                   Icon(
-                    EvaIcons.moreHorizotnalOutline,
+                    EvaIcons.activity,
                     color: Color(0xFFFF975D),
                   ),
                 ],
@@ -377,16 +377,7 @@ class _HomeScreenT1State extends State<HomeScreenT1> {
                                     title: "Breakfast",
                                     userId: widget.userID,
                                     category: "Breakfast"),
-                                cardPopular(
-                                    image: "assets/image/cafe.png",
-                                    title: "Cafe",
-                                    userId: widget.userID,
-                                    category: "Cafe"),
-                                cardPopular(
-                                    image: "assets/image/healtyfood.png",
-                                    title: "HealtyFood",
-                                    userId: widget.userID,
-                                    category: "Healty"),
+                              
                               ],
                             ),
                           ),
@@ -449,8 +440,10 @@ class _HomeScreenT1State extends State<HomeScreenT1> {
                               height: 195.0,
                               child: StreamBuilder(
                                 stream: Firestore.instance
-                                    .collection("recipe")
-                                    .where('type', isEqualTo: 'suggest')
+                                    // .collection("recipe")
+                                    // .where('type', isEqualTo: 'suggest')
+                                    .collection('recipe')
+  .orderBy('rating', descending: true)
                                     .snapshots(),
                                 builder: (BuildContext ctx,
                                     AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -655,7 +648,7 @@ class animationLoadData extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Icon(EvaIcons.searchOutline, color: Colors.white),
-                          Icon(EvaIcons.moreHorizotnalOutline,
+                          Icon(EvaIcons.options2Outline,
                               color: Colors.white),
                         ],
                       ),

@@ -341,7 +341,7 @@ class _SignUpState extends State<SignUp> {
                                             content:
                                                 Text("Please input all form"),
                                             actions: <Widget>[
-                                              FlatButton(
+                                              ElevatedButton(
                                                 child: Text("Close"),
                                                 onPressed: () {
                                                   Navigator.of(context).pop();

@@ -35,8 +35,6 @@ class ThemeBloc {
             hintColor: colorStyle.fontSecondaryColorDark,
             buttonColor: colorStyle.primaryColor,
             canvasColor: colorStyle.grayBackground,
-            cardColor: colorStyle.grayBackground,
-            textSelectionColor: colorStyle.fontColorDark,
-            textSelectionHandleColor: colorStyle.fontColorDarkTitle));
+            cardColor: colorStyle.grayBackground, textSelectionTheme: TextSelectionThemeData(selectionColor: colorStyle.fontColorDark, selectionHandleColor: colorStyle.fontColorDarkTitle,)));
   }
 }

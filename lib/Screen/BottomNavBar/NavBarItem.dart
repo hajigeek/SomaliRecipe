@@ -16,7 +16,7 @@ class BottomNavBarBloc {
         _navBarController.sink.add(NavBarItem.HOME);
         break;
       case 1:
-        _navBarController.sink.add(NavBarItem.VIDEO);
+        _navBarController.sink.add(NavBarItem.FAVORITE);
         break;
       case 2:
         _navBarController.sink.add(NavBarItem.DISCOVER);

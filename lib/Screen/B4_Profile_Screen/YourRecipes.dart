@@ -436,8 +436,8 @@ class dataFirestore extends StatelessWidget {
                                                         .getInstance();
                                                 prefs.remove(title);
                                               });
-                                              Scaffold.of(context)
-                                                  .showSnackBar(SnackBar(
+                                               ScaffoldMessenger.of(context)
+                                                .showSnackBar(SnackBar(
                                                 content: Text("Delete" + title),
                                                 backgroundColor: Colors.red,
                                                 duration: Duration(seconds: 3),

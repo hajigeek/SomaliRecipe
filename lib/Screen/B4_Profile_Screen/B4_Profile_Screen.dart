@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:Somali_Yurecipe/Screen/B4_Profile_Screen/YourRecipes.dart';
-import 'package:Somali_Yurecipe/Screen/B4_Profile_Screen/callCenter.dart';
+
 import 'package:Somali_Yurecipe/Screen/B4_Profile_Screen/editProfile.dart';
 import 'package:Somali_Yurecipe/Screen/Login/ChosseLogin.dart';
 import 'package:Somali_Yurecipe/Screen/MealPlan_Screen/MealPlan.dart';
@@ -216,9 +217,9 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                     idUser: widget.idUser,
                                   )));
                             },
-                            child: category(
+                            child:profileCatgetory(
                               txt: "Meal Plan",
-                              image: "assets/image/mealPlan.png",
+                              icon: EvaIcons.calendarOutline,
                               padding: 20.0,
                             ),
                           ),
@@ -229,9 +230,10 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                     userId: widget.idUser,
                                   )));
                             },
-                            child: category(
+
+                            child:profileCatgetory(
                               txt: "Add Recipes",
-                              image: "assets/image/addRecipe.png",
+                              icon: EvaIcons.fileAddOutline,
                               padding: 20.0,
                             ),
                           ),
@@ -242,9 +244,9 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                     uid: widget.idUser,
                                   )));
                             },
-                            child: category(
+                            child:profileCatgetory(
                               txt: "Your Recipes",
-                              image: "assets/image/yourRecipes.png",
+                              icon: EvaIcons.bookOpenOutline,
                               padding: 20.0,
                             ),
                           ),
@@ -264,9 +266,9 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                     uid: widget.idUser,
                                   )));
                             },
-                            child: category(
+                            child:profileCatgetory(
                               txt: "Edit Profile",
-                              image: "assets/image/editProfile.png",
+                              icon:EvaIcons.editOutline,
                               padding: 20.0,
                             ),
                           ),
@@ -281,9 +283,9 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                                           pageBuilder: (_, ___, ____) =>
                                           new chooseLogin())));
                             },
-                            child: category(
+                            child:profileCatgetory(
                               txt: "Logout",
-                              image: "assets/image/logout.png",
+                              icon: EvaIcons.logOutOutline,
                               padding: 20.0,
                             ),
                           ),
@@ -299,14 +301,16 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
   }
 }
 
-/// Component category class to set list
-class category extends StatelessWidget {
+/// ComponentprofileCatgetory class to set list
+class profileCatgetory extends StatelessWidget {
   @override
-  String txt, image;
+  String txt;
+    final IconData icon;
+  final double Iconsize;
   GestureTapCallback tap;
   double padding;
 
-  category({this.txt, this.image, this.tap, this.padding});
+ profileCatgetory({this.txt, this.icon, this.tap, this.padding, this.Iconsize});
 
   Widget build(BuildContext context) {
     return InkWell(
@@ -322,9 +326,9 @@ class category extends StatelessWidget {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.only(right: padding),
-                      child: Image.asset(
-                        image,
-                        height: 25.0,
+                      child:Icon(
+                        icon,
+                        color: Colors.black26,
                       ),
                     ),
                     Padding(
