@@ -441,7 +441,7 @@ class dataFirestore extends StatelessWidget {
                                                       .getInstance();
                                               prefs.remove(title);
                                             });
-                                            Scaffold.of(context)
+                                            ScaffoldMessenger.of(context)
                                                 .showSnackBar(SnackBar(
                                               content: Text(
                                                   "Delete Recipe " + title),

@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:Somali_Yurecipe/Screen/B4_Profile_Screen/YourRecipes.dart';
-import 'package:Somali_Yurecipe/Screen/B4_Profile_Screen/callCenter.dart';
+
 import 'package:Somali_Yurecipe/Screen/B4_Profile_Screen/editProfile.dart';
 import 'package:Somali_Yurecipe/Screen/Login/ChosseLogin.dart';
 import 'package:Somali_Yurecipe/Screen/MealPlan_Screen/MealPlan.dart';
@@ -272,9 +272,7 @@ class _B4ProfileScreenState extends State<B4ProfileScreen> {
                           ),
                           InkWell(
                             onTap: () {
-                              Navigator.of(context).push(PageRouteBuilder(
-                                  pageBuilder: (_, __, ___) =>
-                                      new callCenter()));
+                              
                             },
                             child: category(
                               txt: "Call Center",

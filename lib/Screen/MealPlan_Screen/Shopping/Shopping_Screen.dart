@@ -232,8 +232,8 @@ class dataFirestore extends StatelessWidget {
                                                 await transaction
                                                     .delete(snapshot.reference);
                                               });
-                                              Scaffold.of(context)
-                                                  .showSnackBar(SnackBar(
+                                              ScaffoldMessenger.of(context)
+                                                .showSnackBar(SnackBar(
                                                 content: Text("Delete " + name),
                                                 backgroundColor: Colors.red,
                                                 duration: Duration(seconds: 3),

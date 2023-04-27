@@ -392,8 +392,9 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
                           height: 195.0,
                           child: StreamBuilder(
                             stream: Firestore.instance
-                                .collection("recipe")
-                                .snapshots(),
+                                      .collection('recipe')
+  .orderBy('rating', descending: true)
+                                    .snapshots(),
                             builder: (BuildContext ctx,
                                 AsyncSnapshot<QuerySnapshot> snapshot) {
                               return new cardPopular(

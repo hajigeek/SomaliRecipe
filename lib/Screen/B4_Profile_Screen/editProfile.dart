@@ -100,8 +100,7 @@ class _updateProfileState extends State<updateProfile> {
         print('File in Progress');
       }
       print("Profile Picture uploaded");
-      Scaffold.of(context)
-          .showSnackBar(SnackBar(content: Text('Profile Picture Uploaded')));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Profile Picture Uploaded')));
     });
   }
 
